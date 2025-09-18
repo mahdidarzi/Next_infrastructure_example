@@ -2,6 +2,7 @@ import style from "./button.module.scss";
 
 export interface ButtonProps {
   primary?: boolean;
+  disabled?: boolean;
   backgroundColor?: string;
   size?: "small" | "medium" | "large";
   label: string;
@@ -17,6 +18,7 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <button
+      onClick={() => alert()}
       type="button"
       className={style.test}
       style={{ backgroundColor }}
