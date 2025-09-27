@@ -1,0 +1,54 @@
+@import "tailwindcss/theme";
+@tailwind utilities;
+@import "../../styles/variables.scss";
+
+.base {
+  @apply inline-flex items-center justify-center font-medium transition-colors rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2;
+  &:disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+}
+
+/* Spinner */
+.spinner {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-top-color: blue;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.primary {
+  color: var(--color-text-white);
+  background-color: var(--color-primary);
+
+  &:hover { background-color: var(--color-primary-hover); }
+  &:focus { --tw-ring-color: var(--color-primary-ring); }
+}
+
+
+.secondary {
+  color: var(--color-text-black);
+  background-color: var(--color-secondary);
+
+  &:hover { background-color: var(--color-secondary-hover); }
+  &:focus { --tw-ring-color: var(--color-secondary-ring); }
+}
+
+.danger {
+  color: var(--color-text-white);
+  background-color: var(--color-danger);
+
+  &:hover { background-color: var(--color-danger-hover); }
+  &:focus { --tw-ring-color: var(--color-danger-ring); }
+}
+
+/* Sizes */
+.sm { @apply px-3 py-1.5 text-sm; }
+.md { @apply px-4 py-2 text-base; }
+.lg { @apply px-5 py-3 text-lg; }
