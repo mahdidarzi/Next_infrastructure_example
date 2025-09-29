@@ -1,25 +1,51 @@
 :root {
-  --color-primary: #2563eb;
-  --color-primary-hover: #1d4ed8;
-  --color-primary-ring: #3b82f6;
-  --color-secondary: #f3f4f6;
-  --color-secondary-hover: #e5e7eb;
-  --color-secondary-ring: #9ca3af;
-  --color-danger: #dc2626;
-  --color-danger-hover: #b91c1c;
-  --color-danger-ring: #ef4444;
-  --color-text-white: #ffffff;
-  --color-text-black: #111827;
+    --color-primary: #2563eb;
+    --color-primary-hover: #1d4ed8;
+    --color-primary-ring: #3b82f6;
+    --color-secondary: #f3f4f6;
+    --color-secondary-hover: #e5e7eb;
+    --color-secondary-ring: #9ca3af;
+    --color-danger: #dc2626;
+    --color-danger-hover: #b91c1c;
+    --color-danger-ring: #ef4444;
+    --color-text-white: #ffffff;
+    --color-text-black: #111827;
+    /* Typography colors */
+    --color-text: #111827; // default text
+    --color-text-muted: #6b7280; // gray-500
+    --color-text-inverse: #f9fafb; // for dark backgrounds
+
+    /* Font sizes */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+
+    /* Font weights */
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
 }
 
 [data-theme='dark'] {
-  --color-primary: #0f5ddc;
-  --color-primary-hover: #2563eb;
-  --color-primary-ring: #60a5fa;
-  --color-secondary: #1f2937;
-  --color-secondary-hover: #374151;
-  --color-danger: #b91c1c;
-  --color-danger-hover: #dc2626;
-  --color-text-white: #f9fafb;
-  --color-text-black: #111827;
+    --color-primary: #0f5ddc;
+    --color-primary-hover: #2563eb;
+    --color-primary-ring: #60a5fa;
+    --color-secondary: #1f2937;
+    --color-secondary-hover: #374151;
+    --color-danger: #b91c1c;
+    --color-danger-hover: #dc2626;
+    --color-text-white: #f9fafb;
+    --color-text-black: #111827;
+    --color-text: #f9fafb;
+    --color-text-muted: #9ca3af;
+    --color-text-inverse: #111827;
+     --color-text: #eaebee; 
 }
