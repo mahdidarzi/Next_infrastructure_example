@@ -1,0 +1,30 @@
+@import "tailwindcss/theme";
+@tailwind utilities;
+@import "../../styles/variables.scss";
+.typography {
+  margin: 0;
+  line-height: 1.5;
+
+  /* Sizes */
+  &.text-xs { font-size: var(--text-xs); }
+  &.text-sm { font-size: var(--text-sm); }
+  &.text-base { font-size: var(--text-base); }
+  &.text-lg { font-size: var(--text-lg); }
+  &.text-xl { font-size: var(--text-xl); }
+  &.text-2xl { font-size: var(--text-2xl); }
+  &.text-3xl { font-size: var(--text-3xl); }
+  &.text-4xl { font-size: var(--text-4xl); }
+  &.text-5xl { font-size: var(--text-5xl); }
+
+  /* Weights */
+  &.font-light { font-weight: var(--font-light); }
+  &.font-normal { font-weight: var(--font-normal); }
+  &.font-medium { font-weight: var(--font-medium); }
+  &.font-semibold { font-weight: var(--font-semibold); }
+  &.font-bold { font-weight: var(--font-bold); }
+
+  /* Colors */
+  &.color-default { color: var(--color-text); }
+  &.color-muted { color: var(--color-text-muted); }
+  &.color-inverse { color: var(--color-text-inverse); }
+}
